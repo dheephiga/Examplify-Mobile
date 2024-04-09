@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Invigil</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+</resources>
