@@ -9,7 +9,7 @@ public interface studentId{
     //    @GET("student/{id}")
       //  Call<Student> getStudentById(@Path("id") int studentId);
 
-        @GET("api/student/{id}")
+        @GET("/student/{id}")
         Call<Student> getStudentById(@Path("id") int studentId);
 
 

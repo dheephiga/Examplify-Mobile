@@ -8,11 +8,9 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface studentApi {
-        @GET("api/student/all")
+        @GET("/student/all")
         Call<List<Student>> getAllData();
 
-        @GET("api/subject/code/{studentId}")
+        @GET("/subject/code/{studentId}")
         Call<String> getSubjectCode(@Path("studentId") int studentId);
-
-
 }

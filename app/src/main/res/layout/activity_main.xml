@@ -18,6 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="password"
+        android:inputType="textPassword"
         android:layout_marginTop="50dp"
         android:layout_below="@id/username"
         />
@@ -26,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Retype Password"
+        android:inputType="textPassword"
         android:layout_marginTop="50dp"
         android:layout_below="@id/password"
         />

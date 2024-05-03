@@ -28,7 +28,7 @@ public class RetrofitService {
                 .setLenient() // Enable lenient parsing
                 .create();
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.29.234:9098/")
+                .baseUrl("http://192.168.29.234:8080/")
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(httpClientBuilder.build()) // Set OkHttpClient instance
