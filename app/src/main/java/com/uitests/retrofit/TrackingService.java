@@ -6,6 +6,6 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 import com.uitests.model.ExamTracking;
 public interface TrackingService {
-    @POST("api/examtracking/link")
+    @POST("/tracking/link")
     Call<String> createTrackingTicket(@Query("rollNumber") int rollNumber, @Query("subCode") String subjectCode, @Query ("answerScriptId") String answerScript);
 }

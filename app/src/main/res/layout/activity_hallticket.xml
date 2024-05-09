@@ -7,15 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".hallticket">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="@string/app_name"
+            app:titleTextColor="@android:color/white"
+            tools:ignore="MissingConstraints" />0
+
         <TextView
             android:id="@+id/rollNumberTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
             android:layout_marginStart="40dp"
             android:layout_marginTop="52dp"
             android:text="Roll Number: "
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
         <TextView
             android:id="@+id/nameTextView"
@@ -61,7 +71,6 @@
             android:id="@+id/btnScanner2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginBottom="302dp"
             android:text="Scan Answer Script"
             android:textSize="20dp"

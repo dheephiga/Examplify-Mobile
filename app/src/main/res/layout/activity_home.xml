@@ -6,31 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".homeActivity">
 
-<LinearLayout  android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/listviewData"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnGetData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Show allocations"
+            android:textSize="20dp"
+             />
+
+        <Button
+            android:id="@+id/btnScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Scanner"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
     <ListView
         android:id="@+id/listviewData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show allocations"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:id="@+id/btnGetData"
-        android:layout_gravity="center"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scanner"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:id="@+id/btnScanner"
-        android:layout_gravity="center"
-        android:layout_below="@id/btnGetData"/>
-</LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonsLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

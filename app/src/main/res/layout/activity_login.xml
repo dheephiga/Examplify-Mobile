@@ -4,33 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:gravity="center_horizontal"
     tools:context=".loginActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:title="@string/app_name" />
 
     <EditText
         android:id="@+id/username1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+
         android:hint="username"
         android:layout_marginTop="50dp"
-        />
+        android:layout_centerHorizontal="true" />
+
     <EditText
         android:id="@+id/password1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="password"
         android:inputType="textPassword"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@id/username1"
-        />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/btnsignin1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/password1"
         android:layout_marginTop="29dp"
+        android:layout_centerHorizontal="true"
         android:text="Sign In" />
 
 </RelativeLayout>
